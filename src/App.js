@@ -75,7 +75,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <h1 className="App  ">Text Summary Demo</h1>
+        <h1 className="App  ">Information Extraction Demo</h1>
         <form onSubmit={this.handleSubmit}>
           <div>
             <div className="col-50-left">
@@ -108,18 +108,8 @@ class App extends React.Component {
               placeholder="Your summary"
             />
           </div>
-          <select
-            className="select"
-            value={this.state.option_value}
-            onChange={this.optionChange}
-          >
-            <option value="d2v">Doc2Vec</option>
-            <option value="t2v">Tf-idf</option>
-            <option value="w2v">Word2Vec</option>
-            <option value="all">Concat_all</option>
-          </select>
 
-          <input className="button button2" type="submit" value="Rút gọn" />
+          <input className="button button2" type="submit" value="Extraction" />
         </form>
       </div>
     );
