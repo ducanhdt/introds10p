@@ -23,7 +23,7 @@ class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     // var url = "http://localhost:5000/text_summary";
-    var url = "https://30bb9bb6c70e.ngrok.io/model/parse";
+    var url = "https://5e707b339144.ngrok.io/model/parse";
     console.log(url);
     // var json = {mytext : this.state.input_value, mode : this.state.option_value};
     var data = { text: this.state.input_value };
